@@ -1,0 +1,135 @@
+/* mediaqueries 1024px */
+
+/* header mediaquerie 1024px */
+
+@media (max-width: 1024px){
+
+    nav{
+        justify-content: space-between;
+        font-size: 14px;
+    }
+
+    .navbar{ 
+        li:hover{
+        color: rgb(226, 7, 160);
+        transition: 2s;
+    }
+    }   
+/* main mediaquerie 1024px */
+
+.grid-main {
+    display: grid;
+    width: 100%;
+    height: 2400px;
+    .presentacion {
+        font-size: 14px;
+        &:hover{
+            color: rgb(226, 7, 160);  
+            transition: 2s;  
+        }
+    }
+}
+
+.section2{
+    grid-area: section2;
+    font-size: 16px;
+}
+
+.section3 div img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section4{
+    grid-area: section4;
+    font-size: 16px;
+}
+
+.section5{
+    grid-area: section5;
+    font-size: 16px;
+}
+
+.section6 div img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section7{
+    grid-area: section7;
+    font-size: 16px;
+}
+
+.section8 div img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section9{
+    grid-area: section9;
+    font-size: 16px;
+}
+
+.section10 div img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+}
+
+.section11{
+    grid-area: section11;
+    font-size: 16px;
+}
+
+/* mediaquerie 1024 main-pages */
+
+.grid-pages {
+    display: grid;
+    width: 100%;
+    height: 1200px;
+}
+
+.section14 {
+    display: grid;
+    width: 100%;
+    height: 400px;
+    .presentacion {
+        font-size: 14px;
+        &:hover{
+            color: rgb(226, 7, 160);
+        }
+        }
+}
+
+.section13{
+    font-size: 16px;
+    .grilla-1{
+        grid-area: grilla-1;
+        font-size: 16px;
+    }
+    .grilla-2{
+        grid-area: grilla-2;
+        font-size: 16px;
+        }
+    .grilla-3{
+        grid-area: grilla-3;   
+        font-size: 16px;
+        }
+    .grilla-4{
+        grid-area: grilla-4;
+        font-size: 16px;
+        }
+}
+
+}

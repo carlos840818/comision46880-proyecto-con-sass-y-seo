@@ -1,0 +1,251 @@
+ /* main index */
+
+ .grid-main {
+    @include grid(repeat(4, 1fr), repeat(7, 1fr), 10px);
+    width: 100%;
+    height: 2100px;
+    background-color: $bg-principal;
+    grid-template-areas: 
+    "section1 section1 section1 section1"
+    "section2 section2 section2 section2"
+    "section3 section3 section4 section4"
+    "section5 section5 section6 section6"
+    "section8 section8 section7 section7"
+    "section9 section9 section10 section10"
+    ". section11 section11 ."
+    ;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    p{
+        text-align: justify;   
+    } 
+}
+
+.section1{
+    background-image: url(../assets/codigo3.jpg);
+    background-color: $bg-principal;
+    grid-area: section1;
+    color: $color-principal;
+    background-repeat: no-repeat;
+    div{
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+}
+
+.presentacion {
+    padding: 120px;
+    h1{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: map-get($font-size, xxl);
+        &:hover{
+            color: blueviolet;
+            transition: 2s;
+        }
+    }
+    h2{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: map-get($font-size, xl );
+        &:hover{
+            color: blueviolet;
+            transition: 2s;
+        }
+    }   
+}
+
+.section2{
+    background-color: $bg-principal;
+    grid-area: section2;
+    color:$color-principal;
+    padding: 30px;
+    font-size: 18px;
+    h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5625rem;
+    }
+    p{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: map-get($font-size, lg);
+        }
+}
+
+.section3 {
+    background-color: $bg-principal;
+    grid-area: section3;
+    margin: 5px 20px 5px 40px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    div{
+        img{
+            width: 100%;
+            height: 240px;
+            object-fit: cover; 
+            background-position: center;
+            border-radius: 30px; 
+            padding: 4px 4px 0px 4px;
+        }
+    }
+}
+
+.section4{
+    background-color: $bg-principal;
+    grid-area: section4;
+    color: $color-principal;
+    margin: 5px 40px 5px 20px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    font-size: 18px;
+    h3{
+        margin: 10px;
+        color: $color-principal;
+    }
+    p{
+        margin: 20px;
+    }
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section5{
+    background-color: $bg-principal;
+    grid-area: section5;
+    color: $color-principal;
+    margin: 5px 20px 5px 40px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    font-size: 18px;
+    p{
+        margin: 20px;
+    }
+    h3{
+        margin: 10px;
+        color: $color-principal;
+    }
+}
+
+.section6 {
+    background-color: $bg-principal;
+    grid-area: section6;
+    margin: 5px 40px 5px 20px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    div{
+        img{
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 30px;
+            padding: 4px 4px 0px 4px;    
+        }
+    }
+}
+
+.section7{
+    background-color: $bg-principal;
+    grid-area: section7;
+    color: $color-principal;
+    margin: 5px 40px 5px 20px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    font-size: 18px;
+    h3{
+        margin: 10px;
+        color: azure;
+    }
+    p{
+        margin: 20px;
+    }
+}
+
+.section8 {
+    background-color: $bg-principal;
+    grid-area: section8;
+    margin: 5px 20px 5px 40px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    div{
+        img{
+            width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 4px 4px 0px 4px;
+        }
+    }
+}
+
+.section9{
+    background-color: $bg-principal;
+    grid-area: section9;
+    color: $color-principal;
+    margin: 5px 20px 5px 40px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    font-size: 18px;
+    h3{
+        margin: 10px;
+        color: azure;
+    }
+    p{
+        margin: 20px;
+    }
+}
+
+.section10 {
+    background-color: $bg-principal;
+    grid-area: section10;
+    margin: 5px 40px 5px 20px;
+    border-style: double;
+    border-color: rgb(80, 78, 78);
+    border-radius: 30px;
+    div{
+        img{
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 30px;
+            padding: 4px 4px 0px 4px;
+        }
+    }
+  }
+  .section11 {
+    background-color: $bg-principal;
+    grid-area: section11;
+    width: 100%;
+    height: 300px;
+    color: $color-principal;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    .registro{
+        width: 100%;
+        background-color:rgba(52, 51, 51, 0.685);
+        padding: 30px;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;
+        &:hover{
+            background-color: rgba(38, 37, 37, 0.685);
+        }
+    }
+    .control{
+        justify-content: center;
+        width: 100%;
+    }
+    form{
+        border-color: $color-principal;
+    } 
+}

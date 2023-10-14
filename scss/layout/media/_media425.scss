@@ -1,0 +1,299 @@
+/* mediaqueries 425px */
+
+/* header 425 */
+
+@media (min-width: 425px) and (max-width: 600px){
+
+    header{
+        position: fixed;
+    }
+
+    nav{ 
+        .navbar{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        li :hover{
+            color: red;
+        }
+        }
+        ul{
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem 0px;
+        }
+        label{
+            display: flex;
+            color: azure;
+            cursor: pointer;
+        }
+        #toggle:checked ~ .navbar{
+            height: 100%;
+        } 
+    }
+
+    /* main index 425px*/
+
+    .grid-main {
+        @include grid(repeat(1, 90%), repeat(11, 1fr), 10px);
+        width: 100%;
+        height: 2900px;
+        background-color: black;
+        grid-template-areas: 
+        "section1"
+        "section2"
+        "section4"
+        "section3"
+        "section5"
+        "section6"
+        "section7"
+        "section8"
+        "section9"
+        "section10"
+        "section11"
+        ;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 12px;
+        p {
+            text-align: justify;
+        }
+    }
+    
+    .section1 {
+        background-image: url(../assets/codigo3.jpg);
+        background-color: black;
+        grid-area: section1;
+        color: azure;
+        background-repeat: no-repeat;
+        div{
+            img{
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+    }
+    
+    .presentacion {
+        padding-top: 200px;
+        font-size: 10px;
+        h1{
+            font-size: 14px;
+        }
+        h2{
+            display: none;
+        }
+        &:hover{
+            color: red;
+        } 
+    }
+    
+    .section2{
+        background-color: black;
+        grid-area: section2;
+        color: azure;
+        padding: 30px;
+        font-size: 12px;
+        h2{
+            font-size: 16px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    
+    .section3 {
+        background-color: black;
+        grid-area: section3;
+        margin: 5px 20px 5px 20px; 
+        border-style: double;
+        border-color: black; 
+        border-radius: 30px;
+        div{
+            img {
+                width: 100%;
+                height: 140px;
+                object-fit: cover; 
+                background-position: center;
+                border-radius: 30px; 
+                padding: 12px 4px 0px 4px;
+            }
+        }
+    }
+    
+    .section4{
+        background-color: black;
+        grid-area: section4;
+        color: azure;
+        margin: 5px 20px 5px 20px;
+        border-style: double;
+        border-color: black;
+        border-radius: 30px;
+        font-size: 14px;
+        p{
+            margin: 20px;
+        }
+        h3{
+            font-size: 16px;
+            margin: 10px;
+        }
+        div{
+            a{
+                h3{
+                    color: azure;
+                }
+            }
+        }
+    }
+    
+    .section5{
+        background-color: black;
+        grid-area: section5;
+        color: azure;
+        margin: 5px 20px 5px 20px;
+        border-style: double;
+        border-color: black;
+        border-radius: 30px;
+        font-size: 14px;
+        p{
+            margin: 20px;
+        }
+        h3{
+            font-size: 16px;
+            margin: 10px;
+        }
+        div{
+            a{
+                h3{
+                    color: azure;
+                }
+            }
+        }
+    }
+    
+    .section6 {
+        background-color: black;
+        grid-area: section6;
+        margin: 5px 20px 5px 20px;
+        border-style: double;
+        border-color: black;
+        border-radius: 30px;
+        div{
+            img {
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+                border-radius: 30px;
+                padding: 4px 4px 0px 4px;
+            }
+        }
+    }
+
+    .section7{
+        background-color: black;
+        grid-area: section7;
+        color: azure;
+        margin: 5px 20px 5px 20px;
+        border-style: double;
+        border-color: black;
+        border-radius: 30px;
+        font-size: 14px;
+        p {
+            margin: 20px;
+        }
+        h3{
+            font-size: 16px;
+            margin: 10px;
+        }
+        div{
+            a{
+                h3{
+                    color: azure;
+                }
+            }
+        }
+    }
+    
+    .section8 {
+        background-color: black;
+        grid-area: section8;
+        margin: 5px 20px 5px 20px;
+        border-style: double;
+        border-color: black;
+        border-radius: 30px;
+        div{
+            img {
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+                border-radius: 30px;
+                padding: 4px 4px 0px 4px;
+            }
+        }
+    }
+    
+    .section9{
+        background-color: black;
+        grid-area: section9;
+        color: azure;
+        margin: 5px 20px 5px 20px;
+        border-style: double;
+        border-color: black;
+        border-radius: 30px;
+        font-size: 14px;
+        p{
+            margin: 20px;
+        }
+        h3{
+            font-size: 16px;
+            margin: 10px;
+        }
+        div{
+            a{
+                h3{
+                    color: azure;
+                }
+            
+            }
+        }
+    }
+    
+    .section10 {
+        background-color: black;
+        grid-area: section10;
+        margin: 5px 20px 5px 20px;
+        border-style: double;
+        border-color: black;
+        border-radius: 30px;
+        div{
+            img {
+                width: 100%;
+                height: 140px;
+                object-fit: cover;
+                border-radius: 30px;
+                padding: 4px 4px 0px 4px;
+            }
+        }
+    }
+    
+    .section11 {
+        background-color: black;
+        grid-area: section11;
+        width: 100%;
+        height: 200px;
+        color: azure;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    /* main pages 425 */
+
+.grid-pages {
+    display: grid;
+    width: 100%;
+    height: 2000px;
+    background-color: black;
+} 
+}

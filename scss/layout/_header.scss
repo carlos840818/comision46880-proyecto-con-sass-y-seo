@@ -1,0 +1,42 @@
+/* Header */
+header{
+    width: 100%;
+    position: fixed;
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.797);
+            padding: 1rem 1.5rem;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    gap: 2rem;
+                    a{
+                        text-decoration: none;
+                        color: azure;   
+                    }
+                }
+            }
+        }
+
+    .logo {
+        font-weight: 700;
+    }
+
+    .nav-wrapper{
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    nav #toggle, nav label {
+        display: none;
+    }
+    
+    .navbar li :hover{
+        color: blueviolet;
+        transform: scale(1.1);
+        transition: color 2s;
+    }
